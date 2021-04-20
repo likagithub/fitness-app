@@ -44,6 +44,15 @@ const GlobalStyles = createGlobalStyle`
         line-height: ${({ theme }) => theme.lineHeights.pSmall};
     }
 
+    li.navlink {
+        font-size: ${({ theme }) => theme.fontSizes.navLink};
+        font-weight: ${({ theme }) => theme.fontWeights.normal};
+        line-height: ${({ theme }) => theme.lineHeights.navLink};        color: ${({ theme }) => theme.colors.navy};
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        cursor: pointer;
+    }
+
     img {
         display: block;
     }

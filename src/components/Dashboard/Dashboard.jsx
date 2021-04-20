@@ -1,26 +1,28 @@
 import React from 'react';
 import styled from 'styled-components';
-import WorkoutIllustration from '../../images/workout-illustration.svg';
+import { Route } from "react-router-dom";
+
+//components
+import Nav from '../nav/nav';
+import WorkoutPreview from './workout-preview';
+import DashboardHeader from './header';
 
 const ContentWrapper = styled.section`
-    margin-top: 70px;
-`;
-
-const StyledIllustration = styled.img`
-    width: 100%;
-    height: auto;
+    width: 90vw;
+    margin: 0 auto;
 `;
 
 const Dashboard = () => {
     return (
-        <ContentWrapper>
-            <h1>Guten Morgen, user Name</h1>
-            <h2>Dein Workout heute</h2>
-            <StyledIllustration src={WorkoutIllustration}/>
-            <p>Titel des Workouts</p>
-            <p>Titel des Programms</p>
-            <p className="small">XXX kcal · 26 Min. · Beweglichkeit</p>
-        </ContentWrapper>
+        <>
+            <ContentWrapper>
+                <DashboardHeader userName="Name"/>
+                <WorkoutPreview workoutTitle="Titel des Workouts" programTitle="Titel des Programms" />
+            </ContentWrapper>
+            <Nav>
+                <Route path="/" component={Nav} />
+            </Nav>
+        </>
     );
 };
 
