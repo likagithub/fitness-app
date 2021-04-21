@@ -29,33 +29,6 @@ const Theme = {
         pSmall: '15px',
         navLink: '12px',
     }
-
-    // h1: css`
-    //     font-weight: 700;
-    //     font-size: 36px;
-    //     line-height: 44px;
-    // `,
-    // h2: css`
-    //     font-weight: 400;
-    //     font-size: 24px;
-    //     line-height: 30px;
-    // `,
-    // text: css`
-    //     font-weight: 400;
-    //     font-size: 16px;
-    //     line-height: 21px;
-    // `,
-    // smallText: css`
-    //     font-weight: 400;
-    //     font-size: 12px;
-    //     line-height: 15px;
-    // `,
-    // navLink: css`
-    //     font-weight: 400;
-    //     font-size: 10px;
-    //     line-height: 12px;
-    //     text-transform: uppercase;
-    // `
 }
 
 export default Theme;

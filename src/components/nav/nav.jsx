@@ -4,6 +4,8 @@ import { NavLink } from "react-router-dom";
 
 // media
 import IconHome from "../../images/_icons/home.svg";
+import IconBrowse from "../../images/_icons/training.svg";
+import IconProfile from "../../images/_icons/profile.svg";
 
 const StyledNavbar = styled.nav`
     background-color: ${({ theme }) => theme.colors.beige};
@@ -18,12 +20,15 @@ const StyledNav = styled.ul`
     margin: 10px auto;
     display: flex;
     justify-content: space-around;
+    align-items: flex-end;
 `
 
 const StyledLinkBox = styled.li`
+    height: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 `
 
 const Nav = () => (
@@ -33,6 +38,18 @@ const Nav = () => (
                 <StyledLinkBox className="navlink">
                     <img src={IconHome} alt="Icon Home" />
                     Home
+                </StyledLinkBox>
+            </NavLink>
+            <NavLink to="/browse">
+                <StyledLinkBox className="navlink">
+                    <img src={IconBrowse} alt="Icon Weights" />
+                    Browse
+                </StyledLinkBox>
+            </NavLink>
+            <NavLink to="/profile">
+                <StyledLinkBox className="navlink">
+                    <img src={IconProfile} alt="Icon Profile" />
+                    Profil
                 </StyledLinkBox>
             </NavLink>
         </StyledNav>

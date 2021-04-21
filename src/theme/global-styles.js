@@ -56,6 +56,12 @@ const GlobalStyles = createGlobalStyle`
     img {
         display: block;
     }
+
+    section.content {
+        width: 90vw;
+        max-width: 1500px;
+        margin: 0 auto;
+    }
 `
 
 export default GlobalStyles;

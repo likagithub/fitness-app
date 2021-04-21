@@ -1,27 +1,23 @@
 import React from 'react';
-import styled from 'styled-components';
-import { Route } from "react-router-dom";
 
 //components
 import Nav from '../nav/nav';
 import WorkoutPreview from './workout-preview';
 import DashboardHeader from './header';
 
-const ContentWrapper = styled.section`
-    width: 90vw;
-    margin: 0 auto;
-`;
-
 const Dashboard = () => {
     return (
         <>
-            <ContentWrapper>
+            <section className="content">
                 <DashboardHeader userName="Name"/>
-                <WorkoutPreview workoutTitle="Titel des Workouts" programTitle="Titel des Programms" />
-            </ContentWrapper>
-            <Nav>
-                <Route path="/" component={Nav} />
-            </Nav>
+                <WorkoutPreview 
+                    workoutTitle="Titel des Workouts" 
+                    programTitle="Titel des Programms"
+                    burningCalories="XXX kcal"
+                    workoutDuration="26 Min." 
+                    workoutCategory="Beweglichkeit"/>
+            </section>
+            <Nav />
         </>
     );
 };

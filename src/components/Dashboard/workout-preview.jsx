@@ -27,7 +27,7 @@ const WorkoutPreview = (props) => {
             <div>
                 <p>{props.workoutTitle}</p>
                 <p>{props.programTitle}</p>
-                <p className="small">XXX kcal · 26 Min. · Beweglichkeit</p>
+                <p className="small">{props.burningCalories} · {props.workoutDuration} · {props.workoutCategory}</p>
             </div>
         </>
     );
