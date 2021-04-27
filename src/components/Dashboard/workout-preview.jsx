@@ -4,6 +4,9 @@ import styled from 'styled-components';
 // media
 import WorkoutIllustration from '../../images/workout-illustration.svg';
 
+// base styling
+import { TextSmall } from '../base/styling'
+
 const StyledIllustration = styled.img`
     width: 100%;
     height: auto;
@@ -21,13 +24,13 @@ const WorkoutPreview = (props) => {
         <>
             <HeadingBox>
                 <h2>Dein Workout heute</h2>
-                <p className="small">Trainingsplan</p>
+                <TextSmall>Trainingsplan</TextSmall>
             </HeadingBox>
             <StyledIllustration src={WorkoutIllustration}/>
             <div>
                 <p>{props.workoutTitle}</p>
                 <p>{props.programTitle}</p>
-                <p className="small">{props.burningCalories} · {props.workoutDuration} · {props.workoutCategory}</p>
+                <TextSmall>{props.burningCalories} · {props.workoutDuration} · {props.workoutCategory}</TextSmall>
             </div>
         </>
     );

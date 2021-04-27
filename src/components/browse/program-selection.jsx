@@ -1,11 +1,14 @@
 import React from 'react';
 
+// components
+import ProgramCard from './program-card'
+
 const ProgramSelection = () => {
     return (
         <>
-            <h2>Titel des Programms</h2>
-            <h2>Titel des Programms</h2>
-            <h2>Titel des Programms</h2>
+            <ProgramCard />
+            <ProgramCard />
+            <ProgramCard />
         </>
     )
 }

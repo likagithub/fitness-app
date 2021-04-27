@@ -38,29 +38,8 @@ const GlobalStyles = createGlobalStyle`
         line-height: ${({ theme }) => theme.lineHeights.p};
     }
 
-    p.small {
-        font-size: ${({ theme }) => theme.fontSizes.pSmall};
-        font-weight: ${({ theme }) => theme.fontWeights.normal};
-        line-height: ${({ theme }) => theme.lineHeights.pSmall};
-    }
-
-    li.navlink {
-        font-size: ${({ theme }) => theme.fontSizes.navLink};
-        font-weight: ${({ theme }) => theme.fontWeights.normal};
-        line-height: ${({ theme }) => theme.lineHeights.navLink};        color: ${({ theme }) => theme.colors.navy};
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        cursor: pointer;
-    }
-
     img {
         display: block;
-    }
-
-    section.content {
-        width: 90vw;
-        max-width: 1500px;
-        margin: 0 auto;
     }
 `
 

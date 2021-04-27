@@ -24,6 +24,13 @@ const StyledNav = styled.ul`
 `
 
 const StyledLinkBox = styled.li`
+    font-size: ${({ theme }) => theme.fontSizes.navLink};
+    font-weight: ${({ theme }) => theme.fontWeights.normal};
+    line-height: ${({ theme }) => theme.lineHeights.navLink};        
+    color: ${({ theme }) => theme.colors.navy};
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
     height: 40px;
     display: flex;
     flex-direction: column;
@@ -35,19 +42,19 @@ const Nav = () => (
     <StyledNavbar>
         <StyledNav>
             <NavLink to="/">
-                <StyledLinkBox className="navlink">
+                <StyledLinkBox>
                     <img src={IconHome} alt="Icon Home" />
                     Home
                 </StyledLinkBox>
             </NavLink>
             <NavLink to="/browse">
-                <StyledLinkBox className="navlink">
+                <StyledLinkBox>
                     <img src={IconBrowse} alt="Icon Weights" />
                     Browse
                 </StyledLinkBox>
             </NavLink>
             <NavLink to="/profile">
-                <StyledLinkBox className="navlink">
+                <StyledLinkBox>
                     <img src={IconProfile} alt="Icon Profile" />
                     Profil
                 </StyledLinkBox>

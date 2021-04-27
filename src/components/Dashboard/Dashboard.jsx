@@ -1,5 +1,8 @@
 import React from 'react';
 
+// base styling
+import { ContentWrapper } from '../base/styling';
+
 //components
 import Nav from '../nav/nav';
 import WorkoutPreview from './workout-preview';
@@ -8,7 +11,7 @@ import DashboardHeader from './header';
 const Dashboard = () => {
     return (
         <>
-            <section className="content">
+            <ContentWrapper>
                 <DashboardHeader userName="Name"/>
                 <WorkoutPreview 
                     workoutTitle="Titel des Workouts" 
@@ -16,7 +19,7 @@ const Dashboard = () => {
                     burningCalories="XXX kcal"
                     workoutDuration="26 Min." 
                     workoutCategory="Beweglichkeit"/>
-            </section>
+            </ContentWrapper>
             <Nav />
         </>
     );
