@@ -24,7 +24,7 @@ const Browse = () => {
         <ContentWrapper>
             <StyledH2>Browse</StyledH2>
             <StyledTextSmall>Filter</StyledTextSmall>
-            <ProgramSelection />
+            <ProgramSelection/>
         </ContentWrapper>
         <Nav />
         </>

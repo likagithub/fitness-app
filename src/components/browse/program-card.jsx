@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from "react-router-dom";
 
 // base styling
 import { TextSmall } from '../base/styling';
@@ -16,20 +17,32 @@ const StyledProgramCard = styled.article`
     text-align: center;
 `
 
-const ContentBox = styled.div`
+const TopBox = styled.div`
     display: flex;
     justify-content: space-between;
 `
 
-const ProgramCard = () => {
+const TitleBox = styled.div`
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`
+
+
+const ProgramCard = (props) => {
     return (
         <>
             <StyledProgramCard>
-                <ContentBox>
+                <TopBox>
                     <img src={IconFavorite} alt="Icon Weights" />
                     <TextSmall>Neu</TextSmall>
-                </ContentBox>
-                <h2>Titel des Programms</h2>
+                </TopBox>
+                <TitleBox>
+                    <Link to="/program">
+                        <h2>{props.programTitle}</h2>
+                    </Link>
+                </TitleBox>
             </StyledProgramCard>
         </>
     )

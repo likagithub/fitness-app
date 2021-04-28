@@ -1,20 +1,18 @@
+
 import React from 'react';
 
 // base styling
 import { ContentWrapper } from '../base/styling'
 
-// components
-import Nav from '../nav/nav';
 
-const Profile = () => {
+const Program = () => {
     return (
         <>
             <ContentWrapper>
-                <h2>Profile</h2>
+                <h2>Program</h2>
             </ContentWrapper>
-            <Nav />
         </>
     );
 };
 
-export default Profile;
+export default Program;

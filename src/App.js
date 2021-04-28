@@ -6,6 +6,7 @@ import { Route } from "react-router-dom";
 import Dashboard from './components/dashboard/dashboard';
 import Browse from './components/browse/browse';
 import Profile from './components/profile/profile';
+import Program from './components/program/program';
 
 
 const MainWrapper = styled.section`
@@ -19,6 +20,7 @@ const App = () => {
       <Route exact path="/" component={Dashboard}/>
       <Route path="/browse" component={Browse}/>
       <Route path="/profile" component={Profile}/>
+      <Route path="/program" component={Program}/>
     </MainWrapper>
   );
 };

@@ -41,6 +41,10 @@ const GlobalStyles = createGlobalStyle`
     img {
         display: block;
     }
+
+    a {
+        color: ${({ theme }) => theme.colors.navy};
+    }
 `
 
 export default GlobalStyles;
