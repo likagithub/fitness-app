@@ -3,17 +3,21 @@ import React from 'react';
 // base styling
 import { BackgroundBeige, SectionWrapper, HeadingBox, TextSmall } from 'components/base/styling';
 
-const ProgramOverwiew = () => {
+// components
+import DaySelection from "./day-selection"
+
+const ProgramDays = (props) => {
     return (
             <BackgroundBeige>
                 <SectionWrapper>
                     <HeadingBox>
-                        <h3>21 Tage</h3>
+                        <h3> {props.daysOfTraining} Tage</h3>
                         <TextSmall>Alle Anzeigen</TextSmall>
                     </HeadingBox>
+                    <DaySelection />
                 </SectionWrapper>
             </BackgroundBeige>
     );
 };
 
-export default ProgramOverwiew;
+export default ProgramDays;

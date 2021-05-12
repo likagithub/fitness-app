@@ -1,10 +1,15 @@
 const Theme = {
     colors: {
+        white: '#fff',
         beige: '#F5EBDD',
         navy: '#1D2A73',
         lightBlue: '#3EC1F3',
         green: '#D2DDD0',
         lightPink: '#EDD4D0',
+        green100: '#7A8778',
+        green75: '#939C91',
+        green50: '#BBC8B9',
+        green25: '#D2DDD0',
     },
 
     fontSizes: {
