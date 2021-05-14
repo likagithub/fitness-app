@@ -6,15 +6,27 @@ import { ThemeProvider } from 'styled-components';
 import GlobalStyles from './theme/global-styles';
 import Theme from './theme/theme';
 import { BrowserRouter } from 'react-router-dom';
+import {
+  ApolloProvider,
+  ApolloClient,
+  InMemoryCache
+} from '@apollo/client';
+
+const client = new ApolloClient({
+  uri: 'https://e24aqc8d.api.sanity.io/v1/graphql/production/default',
+  cache: new InMemoryCache()
+});
 
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeProvider theme={Theme}>
-      <GlobalStyles />
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
-    </ThemeProvider>
+    <ApolloProvider client={client}>
+      <ThemeProvider theme={Theme}>
+        <GlobalStyles />
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </ThemeProvider>
+    </ApolloProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
