@@ -8,6 +8,7 @@ import { SectionWrapper, TextSmall } from 'components/base/styling'
 import IconDot from "images/_icons/dot.svg";
 import IconClose from "images/_elements/close.svg";
 
+
 const StyledProgramHeader = styled.header`
     background-color: ${({ theme }) => theme.colors.lightPink};
 `

@@ -1,12 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from "react-router-dom";
+// import PropTypes from 'prop-types';
 
 // base styling
 import { TextSmall } from 'components/base/styling';
 
 // media
 import IconFavorite from "images/_elements/favorite.svg";
+
 
 const StyledProgramCard = styled.article`
     background-color: ${({ theme }) => theme.colors.beige};
@@ -38,12 +40,20 @@ const ProgramCard = (props) => {
                 <TextSmall>Neu</TextSmall>
             </TopBox>
             <TitleBox>
-                <Link to="/program">
-                    <h2>{props.programTitle}</h2>
+                <Link to={{
+                    pathname: `/program/${props.id}`,
+                    key: `${props.id}`
+                    }}>
+                    <h2>{props.title}</h2>
                 </Link>
             </TitleBox>
         </StyledProgramCard>
     )
 }
+
+// ProgramCard.propTypes = {
+//     title: PropTypes.string,
+//     id: PropTypes.string
+// }
 
 export default ProgramCard;

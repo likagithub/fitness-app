@@ -1,8 +1,7 @@
-
 import { gql } from "@apollo/client";
 
-const GET_PROGRAMS = gql`
-    query allProgramQuery {
+export const GET_PROGRAMS = gql`
+    query allProgramsQuery {
         allProgram {
             _id
             title
@@ -11,6 +10,18 @@ const GET_PROGRAMS = gql`
                     title
                 }
             }
+        }
+    }
+`
+
+export const GET_PROGRAM_BY_ID = gql`
+    query programByIdQuery ($id: ID!){
+        Program (id: $id) {
+            title
+            difficulty
+            duration
+            focus
+            description
         }
     }
 `
