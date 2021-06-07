@@ -25,6 +25,7 @@ const DaySelection = () => {
             {data.Program.workouts.map(workout => 
                 <DayCard 
                     key={workout.Workout._id}
+                    programId={data.Program._id}
                     workoutId={workout.Workout._id} 
                     day={workout.day}
                     workoutTitle={workout.Workout.title}

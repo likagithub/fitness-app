@@ -21,12 +21,12 @@ const StyledTextSmall = styled(TextSmall)`
 const Browse = () => {
     return (
         <>
-        <ContentWrapper>
-            <StyledH2>Browse</StyledH2>
-            <StyledTextSmall>Filter</StyledTextSmall>
-            <ProgramSelection/>
-        </ContentWrapper>
-        <Nav />
+            <ContentWrapper>
+                <StyledH2>Browse</StyledH2>
+                <StyledTextSmall>Filter</StyledTextSmall>
+                <ProgramSelection/>
+            </ContentWrapper>
+            <Nav />
         </>
     );
 };

@@ -13,12 +13,7 @@ const Dashboard = () => {
         <>
             <ContentWrapper>
                 <DashboardHeader userName="Name"/>
-                <WorkoutPreview 
-                    workoutTitle="Titel des Workouts" 
-                    programTitle="Titel des Programms"
-                    burningCalories="XXX kcal"
-                    workoutDuration="26 Min." 
-                    workoutCategory="Beweglichkeit"/>
+                <WorkoutPreview />
             </ContentWrapper>
             <Nav />
         </>

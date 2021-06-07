@@ -70,7 +70,7 @@ const ProgramHeader = () => {
                 <StyledH1>{data.Program.title}</StyledH1>
 
                 <div>
-                    < Button buttonText="jetzt starten" buttonLink={`/workout/${data.Program.workouts[0].Workout._id}`}/>
+                    < Button buttonText="jetzt starten" buttonLink={`/program/${data.Program._id}/workout/${data.Program.workouts[0].Workout._id}`}/>
 
                     <ProgramSpecs>
                         <SpecsBox spec={data.Program.focus} />

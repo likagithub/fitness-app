@@ -33,13 +33,13 @@ const Workout = () => {
             <Background>
                 <StyledSectionWrapper>
                 
-                <WorkoutHead />
+                    <WorkoutHead />
 
-                < WorkoutInformation />
+                    < WorkoutInformation />
 
-                <StyledButtonBox>
-                    < Button buttonText="los!" buttonLink={`/browse/`} />
-                </StyledButtonBox>
+                    <StyledButtonBox>
+                        < Button buttonText="los!" buttonLink={`/exercise/`} />
+                    </StyledButtonBox>
                 
                 </StyledSectionWrapper>
             </Background>

@@ -29,7 +29,7 @@ const DayCard = (props) => {
     return (
         <StyledDayCard>
             <Link to={{
-                    pathname: `/workout/${props.workoutId}`,
+                    pathname: `/program/${props.programId}/workout/${props.workoutId}`,
                     key: `${props.workoutId}`
                     }}>
                 <p> Tag {props.day} · {props.workoutTitle} </p>

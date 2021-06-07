@@ -5,9 +5,10 @@ import { Route } from "react-router-dom";
 // components
 import Dashboard from 'pages/dashboard';
 import Browse from 'pages/browse';
-import Profile from 'components/profile/profile';
+import Profile from 'pages/profile';
 import Program from 'pages/program';
 import Workout from 'pages/workout';
+import Exercise from 'pages/exercise';
 
 
 const MainWrapper = styled.section`
@@ -21,8 +22,9 @@ const App = () => {
       <Route exact path="/" component={Dashboard}/>
       <Route path="/browse" component={Browse}/>
       <Route path="/profile" component={Profile}/>
-      <Route path="/program/:id" component={Program}/>
-      <Route path="/workout/:id" component={Workout}/>
+      <Route path="/program/:programId/workout/:id" component={Workout} exact/>
+      <Route path="/program/:id" component={Program} exact/>
+      <Route path="/exercise" component={Exercise}/>
 
     </MainWrapper>
   );
