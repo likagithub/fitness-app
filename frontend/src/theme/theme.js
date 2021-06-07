@@ -10,6 +10,7 @@ const Theme = {
         green75: '#939C91',
         green50: '#BBC8B9',
         green25: '#D2DDD0',
+        gradient: 'linear-gradient(250deg, #FFB7D5 22.27%, rgba(255, 255, 255, 0) 89.6%), #FFBE21',
     },
 
     fontSizes: {

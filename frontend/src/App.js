@@ -7,9 +7,8 @@ import Dashboard from 'components/dashboard/dashboard';
 import Browse from 'components/browse/browse';
 import Profile from 'components/profile/profile';
 import Program from 'components/program/program';
+import Workout from 'components/workout/workout';
 
-//test
-import Test from 'components/data-test'
 
 const MainWrapper = styled.section`
   width: 100vw;
@@ -22,9 +21,8 @@ const App = () => {
       <Route exact path="/" component={Dashboard}/>
       <Route path="/browse" component={Browse}/>
       <Route path="/profile" component={Profile}/>
-      <Route path="/program" component={Program}/>
-
-      <Route path="/data-test" component={Test}/>
+      <Route path="/program/:id" component={Program}/>
+      <Route path="/workout/:id" component={Workout}/>
 
     </MainWrapper>
   );
