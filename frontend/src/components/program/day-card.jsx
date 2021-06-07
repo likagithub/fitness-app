@@ -28,10 +28,13 @@ const StyledIconFavorite = styled.img`
 const DayCard = (props) => {
     return (
         <StyledDayCard>
-            <Link to="/training">
-                <p> {props.dayTitle} </p>
+            <Link to={{
+                    pathname: `/workout/${props.workoutId}`,
+                    key: `${props.workoutId}`
+                    }}>
+                <p> Tag {props.day} · {props.workoutTitle} </p>
             </Link>
-            <TextSmall>{props.burningCalories} · {props.workoutDuration} · {props.workoutCategory}</TextSmall>
+            <TextSmall>{props.calories} kcal · {props.duration} Min. · {props.categories}</TextSmall>
             <StyledIconFavorite src={IconFavorite} alt="Icon Weights" />
         </StyledDayCard>
     )

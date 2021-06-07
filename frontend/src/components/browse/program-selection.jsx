@@ -3,9 +3,7 @@ import { useQuery } from "@apollo/client";
 
 // components
 import ProgramCard from './program-card'
-
-//components
-import Spinner from "components/spinner/spinner";
+import Spinner from "components/elements/spinner";
 
 //queries
 import {GET_PROGRAMS} from "queries/queries"
@@ -21,7 +19,10 @@ const ProgramSelection = () => {
     return (
         <>
             {data.allProgram.map(program => 
-                <ProgramCard title={program.title} id={program._id} key={program._id} />
+                <ProgramCard 
+                    title={program.title} 
+                    id={program._id} 
+                    key={program._id} />
             )}
         </>
     )
