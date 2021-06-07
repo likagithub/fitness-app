@@ -7,7 +7,7 @@ import { ContentWrapper } from 'components/base/styling'
 
 // components
 import Nav from 'components/nav/nav';
-import ProgramSelection from './program-selection';
+import ProgramSelection from 'components/browse/program-selection';
 
 
 const StyledH2 = styled.h2`

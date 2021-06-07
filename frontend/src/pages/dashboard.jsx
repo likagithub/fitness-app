@@ -5,8 +5,8 @@ import { ContentWrapper } from 'components/base/styling';
 
 //components
 import Nav from 'components/nav/nav';
-import WorkoutPreview from './workout-preview';
-import DashboardHeader from './header';
+import WorkoutPreview from 'components/dashboard/workout-preview';
+import DashboardHeader from 'components/dashboard/header';
 
 const Dashboard = () => {
     return (

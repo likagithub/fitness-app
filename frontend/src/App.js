@@ -3,11 +3,11 @@ import styled from 'styled-components';
 import { Route } from "react-router-dom";
 
 // components
-import Dashboard from 'components/dashboard/dashboard';
-import Browse from 'components/browse/browse';
+import Dashboard from 'pages/dashboard';
+import Browse from 'pages/browse';
 import Profile from 'components/profile/profile';
-import Program from 'components/program/program';
-import Workout from 'components/workout/workout';
+import Program from 'pages/program';
+import Workout from 'pages/workout';
 
 
 const MainWrapper = styled.section`
