@@ -25,7 +25,6 @@ const App = () => {
       <Route path="/program/:programId/workout/:id" component={Workout} exact/>
       <Route path="/program/:id" component={Program} exact/>
       <Route path="/exercise" component={Exercise}/>
-
     </MainWrapper>
   );
 };

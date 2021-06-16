@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+// import { CountdownCircleTimer } from 'react-countdown-circle-timer'
 
 // base styling
 import { SectionWrapper } from 'components/base/styling'
@@ -7,7 +8,8 @@ import { SectionWrapper } from 'components/base/styling'
 //components
 import ExerciseHead from "components/exercise/exercise-head"
 import ExerciseInformation from "components/exercise/exercise-information"
-import { CountdownCircleTimer } from 'react-countdown-circle-timer'
+import CountdownTimer from "components/elements/countdown-timer"
+
 
 
 const Background = styled.div`
@@ -30,17 +32,9 @@ const Exercise = () => {
                 
                     <ExerciseHead />
                     
-                    <CountdownCircleTimer
-                        isPlaying
-                        duration={30}
-                        colors={[
-                        ['#1D2A73'],
-                        ]}
-                    >
-                        {({ remainingTime }) => remainingTime}
-                    </CountdownCircleTimer>
+                    <CountdownTimer />
 
-                    <ExerciseInformation/>
+                    <ExerciseInformation />
                 
                 </StyledSectionWrapper>
             </Background>
